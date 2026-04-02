@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartado de Cupo</title>
+<link rel="stylesheet" href="./styles.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff700, #f5f5f5);
+    margin: 0;
+    padding: 20px;
+}
+
+.formulario-apartado{
+    max-width: 650px;
+    margin: 50px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.formulario-apartado h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario-apartado label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario-apartado input,
+.formulario-apartado select,
+.formulario-apartado textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formulario-apartado button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fff700, #d4c800);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario-apartado button:hover{
+    transform: translateY(-2px);
+}
+</style>
+</head>
+<body>
+
+<div class="formulario-apartado">
+    <h2>📘 Formulario de Apartado</h2>
+
+    <form action="https://formsubmit.co/rogerguzman786@gmail.com" method="POST">
+        
+        <!-- CONFIGURACIÓN FORM -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nuevo Apartado de Cupo - INIM">
+        <input type="hidden" name="_template" value="table">
+
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" required>
+
+        <label>Edad</label>
+        <input type="number" name="edad" required>
+
+        <label>Correo</label>
+        <input type="email" name="correo" required>
+
+        <label>Teléfono</label>
+        <input type="tel" name="telefono" required pattern="[0-9]{8}">
+
+        <label>Curso que desea</label>
+        <select name="curso" required>
+            <option value="">Seleccione</option>
+            <option>Bachillerato General</option>
+            <option>Bachillerato Técnico Contable</option>
+            <option>Atención Primaria en Salud</option>
+            <option>Técnico en Electricidad</option>
+            <option>Desarrollo en Software</option>
+            <option>Logística y Aduanas</option>
+            <option>Mecánica Automotriz</option>
+            <option>Mecánica Industrial</option>
+        </select>
+
+        <label>Dirección</label>
+        <textarea name="direccion" rows="4"></textarea>
+
+        <button type="submit">✅ Apartar Cupo</button>
+    </form>
+</div>
+
+</body>
+</html>

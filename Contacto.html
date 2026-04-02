@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INIM San Miguel - Contact</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="lenguaje">
+        <span class="esp">Español</span>
+        <input type="checkbox" class="check">
+        <span class="en">English</span>
+    </div>
+  <header class="header">
+    <div class="logo">
+      <img src="./IMAGENES/INIM.jpeg" alt="Logo INIM">
+      <div class="logo-text">
+        <h1 data-key="inicio">INIM</h1>
+        <p>Instituto Nacional Isidro Menendez</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="./index.html" data-key="inicio">inicio</a>
+      <a href="./Cursos.html" data-key="cursos">Cursos</a>
+      <a href="./Nosotros.html" data-key="nosotros">Nosotros</a>
+      <a href="./Contacto.html" data-key="contacto">Contactos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 data-key="contactoTitulo">Contacta con nosotros</h2>
+    <p data-key="contactoTexto">Estamos aquí para ayudarte.
+      ¡Escríbenos o visítanos!</p>
+  </section>
+
+  <main class="contact">
+    <section class="contact-info-section">
+      <h2 class="section-title" data-key="infoContacto">Información del contacto</h2>
+      <address class="contact-info">
+        <p><strong data-key="direccionLabel">Dirección:</strong>
+          <span data-key="direccion">San Miguel, El Salvador, Final de la calle 15 Oeste y 7
+            Avenida Sur, Barrio San Nicolás, San Miguel</span>
+        </p>
+        <p><strong data-key="telefonoLabel">Teléfono:</strong>
+          <a href="tel:+50300000000" data-key="telefono">+503 6994 9386</a>
+        <a href="https://wa.me/50369949386?text=Hola%20quiero%20informaci%C3%B3n" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="whatsapp-btn">
+   💬 Enviar por WhatsApp
+</a>
+        </p>
+        <p><strong data-key="correoLabel">Correo electrónico:</strong>
+          <a href="mailto:isidromenendez1937@gmail.com" data-key="correo">isidromenendez1937@gmail.com</a>
+        </p>
+      </address>
+    </section>
+
+    <section class="contact-form-section">
+      <h2 class="section-title" data-key="envianosMensaje">Envíanos un mensaje</h2>
+      <form id="formRegister">
+        <div class="form-group">
+          <label for="nombre" data-key="nombreLabel">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" autocomplete="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="apellidos" data-key="apellidosLabel">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" autocomplete="family-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-key="emailLabel">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje" data-key="mensajeLabel">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" data-key="btnEnviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+
+
+
+    <footer>
+    <p>&copy; 2025 INIM ONLINE. All rights reserved.</p>
+  </footer>
+  
+  <script src="./Js/traductor.js"></script>
+</body>
+</html>
