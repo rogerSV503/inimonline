@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INIM San Miguel - Contact</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="lenguaje">
+        <span class="esp">Español</span>
+        <input type="checkbox" class="check" checked>
+        <span class="en">English</span>
+    </div>
+  <header class="header">
+    <div class="logo">
+      <img src="../IMAGENES/INIM.npg.jpeg" alt="Logo INIM">
+      <div class="logo-text">
+        <h1 data-key="inicio">INIM</h1>
+        <p>Isidro Menéndez National Institute</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="./index.html" data-key="inicio">Start</a>
+      <a href="./Cursos.html" data-key="cursos">Courses</a>
+      <a href="./Nosotros.html" data-key="nosotros">Us</a>
+      <a href="./Contacto.html" data-key="contacto">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 data-key="contactoTitulo">Contact us</h2>
+    <p data-key="contactoTexto">We're here to help. Write to us or visit us!</p>
+  </section>
+
+  <main class="contact">
+    <section class="contact-info-section">
+      <h2 class="section-title" data-key="infoContacto">Contact Information</h2>
+      <address class="contact-info">
+        <p><strong data-key="direccionLabel">Dirección:</strong>
+          <span data-key="direccion">San Miguel, El Salvador, End of 15 West Street and 7
+            South Avenue, San Nicolás Neighborhood, San Miguel</span>
+        </p>
+        <p><strong data-key="telefonoLabel">Phone:</strong>
+          <a href="tel:+50300000000" data-key="telefono">+503 6994 9386</a>
+          <a href="https://wa.me/69949386?text=Hola%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer">
+            <button>Send by WhatsApp</button>
+        </p>
+        <p><strong data-key="correoLabel">Email:</strong>
+          <a href="mailto:isidromenendez1937@gmail.com" data-key="correo">isidromenendez1937@gmail.com</a>
+        </p>
+      </address>
+    </section>
+
+    <section class="contact-form-section">
+      <h2 class="section-title" data-key="envianosMensaje">Send us a message</h2>
+      <form id="formRegister">
+        <div class="form-group">
+          <label for="nombre" data-key="nombreLabel">Name</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Write your full name" autocomplete="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="apellidos" data-key="apellidosLabel">Surnames</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Write your last names" autocomplete="family-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-key="emailLabel">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje" data-key="mensajeLabel">Message</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" data-key="btnEnviar">send</button>
+      </form>
+    </section>
+  </main>
+
+
+
+
+    <footer>
+    <p>&copy; 2025 INIM ONLINE. All rights reserved.</p>
+  </footer>
+  
+  <script src="../Js/traductor.js"></script>
+</body>
+</html>
