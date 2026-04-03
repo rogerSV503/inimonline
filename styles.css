@@ -204,14 +204,14 @@ form input, form textarea {
         url(./IMAGENES/instituto.npg.jpeg) center/cover no-repeat;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10rem 4rem;
+    padding: 11rem 5rem;
 }
 
 footer {
   background: #fff700;
   color: yellow;
   text-align: center;
-  padding: 50px;
+  padding: 70px;
 }
 
 .whatsapp-btn{
