@@ -10,7 +10,7 @@ body {
   align-items: center;
   background-color: #fff700;
   color: rgb(0, 0, 0);
-  padding: 8px 15px;
+  padding: 10px 20px;
 }
 
 .lenguaje{
@@ -204,7 +204,7 @@ form input, form textarea {
         url(./IMAGENES/instituto.npg.jpeg) center/cover no-repeat;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 5rem 4rem;
+    padding: 10rem 4rem;
 }
 
 footer {
@@ -212,12 +212,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  margin-top: 20;
 }
 
 .whatsapp-btn{
