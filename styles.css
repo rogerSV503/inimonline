@@ -212,6 +212,12 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .whatsapp-btn{
