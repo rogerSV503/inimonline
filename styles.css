@@ -1,0 +1,334 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff700;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+}
+
+.lenguaje{
+position: absolute;
+right: 10%
+}
+.en{
+    color: #000000;
+}
+.es{
+    color: #000000;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #363737;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25;
+    border: 2px solid #b3b6b6;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #949899;
+}
+
+.check:checked:before{
+    background: #f7f9f9;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo-text h1, .logo-text p {
+  margin: 0;
+}
+
+.nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #425a7f;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff700;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.courses {
+  padding: 20px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  border: 5px solid #fff700;
+  padding: 10px;
+  background-color: #ffffff;
+  position: relative;
+
+}
+.course-title-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  
+}
+
+.course-icon {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: auto;
+  z-index: 10;
+  background-color: #fff700;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.course-title-wrapper h2 {
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.contact {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact button {
+  background: #3d4aff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-left: 6px solid #000000;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+
+.contact-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #323232;
+  text-decoration: none;
+  font-weight: bold;
+}
+.telefonoLabel button:hover {
+  background: greenyellow;
+}
+
+.contact-info a:hover {
+  color: #7a7a7a;
+  text-decoration: underline;
+}
+
+
+.section-title {
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(./IMAGENES/fondo.png) center/cover no-repeat;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10rem 4rem;
+}
+
+footer {
+  background: #fff700;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.whatsapp-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:active{
+    transform: scale(0.98);
+}
+
+ /* ===== BOTONES MODERNOS GENERALES ===== */
+.btn,
+.nav button,
+.contact button,
+button[type="submit"] {
+  background: linear-gradient(135deg, #fff700, #d4c800);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.nav button:hover,
+.contact button:hover,
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #ffe600, #b8ae00);
+}
+
+.btn:active,
+.nav button:active,
+.contact button:active,
+button[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+/* ===== BOTONES DE NAVEGACIÓN MODERNOS ===== */
+.nav a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background: rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ===== BOTÓN DE CURSOS ===== */
+.course-card .btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+/* ===== BOTÓN HERO MÁS PREMIUM ===== */
+.hero .btn {
+  background: linear-gradient(135deg, #ffffff, #dcdcdc);
+  color: #000;
+  border-radius: 50px;
+  padding: 14px 28px;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+}
+
+.course-card{
+    border: 5px solid #fff700;
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* empuja el botón al final */
+.course-card .btn{
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
