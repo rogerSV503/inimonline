@@ -680,3 +680,136 @@ button[type="submit"]:active {
     }
 
 }
+
+/* =========================================
+   📱 HEADER PARA CELULAR
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Selector de idioma */
+    .lenguaje {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        left: auto !important;
+
+        width: 100%;
+        height: auto;
+
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        gap: 6px;
+
+        padding: 8px 0;
+
+        background-color: #fff700;
+
+        font-size: 14px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* HEADER */
+    .header {
+        position: relative;
+
+        width: 100%;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        justify-content: center !important;
+        align-items: center !important;
+
+        text-align: center;
+
+        padding: 20px 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* LOGO */
+    .logo {
+        width: 100%;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .logo img {
+        display: block;
+
+        width: auto;
+        height: 70px;
+
+        margin: 0 auto 8px auto;
+    }
+
+
+    .logo-text {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .logo-text h1 {
+        font-size: 28px;
+
+        margin: 0 0 5px 0;
+    }
+
+
+    .logo-text p {
+        font-size: 13px;
+
+        margin: 0;
+
+        line-height: 1.4;
+    }
+
+
+    /* MENÚ */
+    .nav {
+        width: 100%;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+
+        margin-top: 20px;
+    }
+
+
+    .nav a {
+        display: block;
+
+        width: 90%;
+
+        margin: 0 !important;
+
+        padding: 10px;
+
+        text-align: center;
+
+        font-size: 16px;
+
+        box-sizing: border-box;
+    }
+
+}
