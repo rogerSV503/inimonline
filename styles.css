@@ -333,23 +333,69 @@ button[type="submit"]:active {
 }
 
 /* =========================================
-   📱 DISEÑO RESPONSIVE - CELULAR
+   📱💻 DISEÑO RESPONSIVE
+   ========================================= */
+
+/* ===== TABLETS ===== */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .nav a {
+        margin: 0 4px;
+        padding: 7px 9px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 140px 30px;
+        min-height: 500px;
+        box-sizing: border-box;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================
+   📱 CELULARES
    ========================================= */
 
 @media (max-width: 768px) {
 
-    /* ===== PÁGINA ===== */
+    /* ===== GENERAL ===== */
+
+    * {
+        box-sizing: border-box;
+    }
 
     body {
         width: 100%;
+        margin: 0;
         overflow-x: hidden;
     }
 
 
-    /* ===== SELECTOR DE IDIOMA ===== */
+    /* ===== IDIOMA ===== */
 
     .lenguaje {
         position: static;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -363,9 +409,11 @@ button[type="submit"]:active {
     /* ===== HEADER ===== */
 
     .header {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         text-align: center;
         padding: 15px 10px;
     }
@@ -377,20 +425,22 @@ button[type="submit"]:active {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .logo img {
-        height: 75px;
         width: auto;
+        height: 70px;
     }
 
     .logo-text h1 {
         font-size: 26px;
-        margin-top: 5px;
+        margin: 5px 0;
     }
 
     .logo-text p {
         font-size: 12px;
+        margin: 0;
     }
 
 
@@ -401,72 +451,90 @@ button[type="submit"]:active {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 15px;
         gap: 5px;
+        margin-top: 15px;
     }
 
     .nav a {
+        display: block;
         width: 90%;
         margin: 0;
         padding: 10px;
         text-align: center;
-        box-sizing: border-box;
+        font-size: 15px;
     }
 
 
     /* ===== HERO ===== */
 
     .hero {
-        min-height: 60vh;
+        width: 100%;
+        min-height: 65vh;
+
         padding: 80px 20px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        text-align: center;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
         box-sizing: border-box;
     }
 
+
     .hero h2 {
-        font-size: 28px;
+        font-size: 29px;
         line-height: 1.2;
-        margin-bottom: 15px;
+        margin: 0 0 15px 0;
     }
 
     .hero p {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.5;
-        max-width: 90%;
+        max-width: 95%;
+        margin: 8px 0;
     }
 
 
-    /* ===== BOTÓN DEL HERO ===== */
+    /* ===== BOTÓN HERO ===== */
 
     .hero .btn {
-        padding: 12px 25px;
+        display: inline-block;
+        padding: 12px 24px;
         font-size: 14px;
-        margin-top: 15px;
+        margin-top: 18px;
+        max-width: 90%;
     }
 
 
     /* ===== CURSOS ===== */
 
     .courses {
-        padding: 20px 15px;
+        width: 100%;
+        padding: 30px 15px;
     }
 
     .course-grid {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 25px;
+        width: 100%;
     }
 
     .course-card {
         width: 100%;
         min-height: 300px;
-        box-sizing: border-box;
+        padding: 20px 15px;
     }
 
 
-    /* ===== TÍTULOS DE CURSOS ===== */
+    /* ===== TÍTULOS CURSOS ===== */
 
     .course-title-wrapper h2 {
         font-size: 20px;
@@ -481,14 +549,42 @@ button[type="submit"]:active {
     /* ===== CONTACTO ===== */
 
     .contact {
-        padding: 30px 15px;
         width: 100%;
+        max-width: 100%;
+        padding: 35px 15px;
         box-sizing: border-box;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* ===== FORMULARIOS ===== */
+
+    form {
+        width: 100%;
     }
 
     form input,
     form textarea {
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+
+    /* ===== WHATSAPP ===== */
+
+    .whatsapp-btn {
+        max-width: 100%;
+        justify-content: center;
         box-sizing: border-box;
     }
 
@@ -496,8 +592,10 @@ button[type="submit"]:active {
     /* ===== FOOTER ===== */
 
     footer {
+        width: 100%;
         padding: 35px 15px;
         font-size: 12px;
+        box-sizing: border-box;
     }
 
 }
@@ -509,8 +607,10 @@ button[type="submit"]:active {
 
 @media (max-width: 480px) {
 
+    /* ===== LOGO ===== */
+
     .logo img {
-        height: 65px;
+        height: 60px;
     }
 
     .logo-text h1 {
@@ -521,9 +621,22 @@ button[type="submit"]:active {
         font-size: 11px;
     }
 
+
+    /* ===== MENÚ ===== */
+
+    .nav a {
+        width: 95%;
+        padding: 9px;
+        font-size: 14px;
+    }
+
+
+    /* ===== HERO ===== */
+
     .hero {
-        min-height: 65vh;
-        padding: 60px 15px;
+        min-height: 70vh;
+        padding: 70px 15px;
+        background-position: center center;
     }
 
     .hero h2 {
@@ -536,11 +649,34 @@ button[type="submit"]:active {
 
     .hero .btn {
         font-size: 13px;
-        padding: 11px 22px;
+        padding: 11px 20px;
     }
+
+
+    /* ===== CURSOS ===== */
 
     .course-card {
         padding: 15px;
+        min-height: 280px;
+    }
+
+    .course-title-wrapper h2 {
+        font-size: 18px;
+    }
+
+
+    /* ===== CONTACTO ===== */
+
+    .contact {
+        padding: 25px 12px;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    footer {
+        padding: 30px 10px;
+        font-size: 11px;
     }
 
 }
