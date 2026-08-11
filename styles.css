@@ -331,3 +331,216 @@ button[type="submit"]:active {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* =========================================
+   📱 DISEÑO RESPONSIVE - CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* ===== PÁGINA ===== */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ===== SELECTOR DE IDIOMA ===== */
+
+    .lenguaje {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 8px;
+        font-size: 13px;
+        background-color: #fff700;
+    }
+
+
+    /* ===== HEADER ===== */
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+
+    /* ===== LOGO ===== */
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 75px;
+        width: auto;
+    }
+
+    .logo-text h1 {
+        font-size: 26px;
+        margin-top: 5px;
+    }
+
+    .logo-text p {
+        font-size: 12px;
+    }
+
+
+    /* ===== MENÚ ===== */
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        gap: 5px;
+    }
+
+    .nav a {
+        width: 90%;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== HERO ===== */
+
+    .hero {
+        min-height: 60vh;
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+
+    /* ===== BOTÓN DEL HERO ===== */
+
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+
+    /* ===== CURSOS ===== */
+
+    .courses {
+        padding: 20px 15px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .course-card {
+        width: 100%;
+        min-height: 300px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== TÍTULOS DE CURSOS ===== */
+
+    .course-title-wrapper h2 {
+        font-size: 20px;
+    }
+
+    .course-icon {
+        width: 45px;
+        top: -35px;
+    }
+
+
+    /* ===== CONTACTO ===== */
+
+    .contact {
+        padding: 30px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    footer {
+        padding: 35px 15px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================
+   📱 TELÉFONOS PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .logo img {
+        height: 65px;
+    }
+
+    .logo-text h1 {
+        font-size: 23px;
+    }
+
+    .logo-text p {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 65vh;
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero .btn {
+        font-size: 13px;
+        padding: 11px 22px;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+
+}
