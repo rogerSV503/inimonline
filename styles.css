@@ -201,7 +201,7 @@ form input, form textarea {
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-   url("./IMAGENES/image_2026-08-11_162241252.png") center/cover no-repeat;
+    url(./IMAGENES/image_2026-08-11_162241252) center/cover no-repeat;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 20rem 10rem;
