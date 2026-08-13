@@ -272,21 +272,54 @@ button[type="submit"]:active {
   transform: scale(0.97);
 }
 
-/* ===== BOTONES DE NAVEGACIÓN MODERNOS ===== */
+/* ===== MENÚ CON EFECTO DE LÍNEA ===== */
+
 .nav a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-  padding: 8px 14px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+    position: relative;
+    align-items: center;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 0;
+    padding: 1rem;
+
+    transition: all 0.3s ease;
 }
 
-.nav a:hover {
-  background: rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+
+/* Línea antes del texto */
+
+.nav a:before {
+    background-color: #000;
+    content: "";
+
+    display: inline-block;
+    height: 2px;
+
+    margin-right: 0;
+
+    width: 0;
+
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+}
+
+
+/* Efecto al pasar el mouse */
+
+.nav a:hover:before {
+    background-color: #000;
+    width: 3rem;
+    margin-right: 10px;
 }
 
 /* ===== BOTÓN DE CURSOS ===== */
