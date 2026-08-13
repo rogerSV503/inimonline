@@ -1,53 +1,97 @@
 <!DOCTYPE html>
-<html lang="es"><button></button>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INIM San Miguel - Inicio</title>
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INIM San Miguel - Inicio</title>
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-<header class="header">
 
-    <div class="lenguaje">
-        <span class="esp">Español</span>
-        <input type="checkbox" class="check">
-        <span class="en">English</span>
-    </div>
+    <header class="header">
 
-    <div class="logo">
-        <img src="./IMAGENES/INIM.npg.jpeg" alt="Logo INIM">
+        <!-- SELECTOR DE IDIOMA -->
+        <div class="lenguaje">
+            <span class="esp">Español</span>
 
-        <div class="logo-text">
-            <h1 data-key="inicio">INIM</h1>
-            <p>Instituto Nacional Isidro Menéndez</p>
+            <input type="checkbox" class="check">
+
+            <span class="en">English</span>
         </div>
-    </div>
-
-    <nav class="nav">
-        <a href="./index.html" data-key="inicio">Inicio</a>
-        <a href="./Cursos.html" data-key="cursos">Cursos</a>
-        <a href="./Nosotros.html" data-key="nosotros">Nosotros</a>
-        <a href="./Contacto.html" data-key="contacto">Contacto</a>
-    </nav>
-
-</header>
-
-  <section class="hero">
-    <h2 data-key="oferta">Oferta Academica 2026</h2>
-    <p data-key="descubre">Descubre los cursos tecnicos y bachilleratos que ofrecemos</p>
-    <p data-key="nuevo">Ven y conoce el nuevo INIM</p>
-    <a href="./Cursos.html" class="btn" data-key="botonCursos">Ver Cursos</a>
-  </section>
-
-  
-  <script src="./Js/traductor.js"></script>
 
 
+        <!-- LOGO -->
+        <div class="logo">
 
-  <footer>
-    <p>&copy; INIM ONLINE 2025. Todos los derechos reservados.</p>
-  </footer>
+            <img src="./IMAGENES/INIM.npg.jpeg" alt="Logo INIM">
+
+            <div class="logo-text">
+                <h1 data-key="inicio">INIM</h1>
+                <p>Instituto Nacional Isidro Menéndez</p>
+            </div>
+
+        </div>
+
+
+        <!-- MENÚ -->
+        <nav class="nav">
+
+            <a href="./index.html" data-key="inicio">
+                Inicio
+            </a>
+
+            <a href="./Cursos.html" data-key="cursos">
+                Cursos
+            </a>
+
+            <a href="./Nosotros.html" data-key="nosotros">
+                Nosotros
+            </a>
+
+            <a href="./Contacto.html" data-key="contacto">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h2 data-key="oferta">
+            Oferta Academica 2026
+        </h2>
+
+        <p data-key="descubre">
+            Descubre los cursos tecnicos y bachilleratos que ofrecemos
+        </p>
+
+        <p data-key="nuevo">
+            Ven y conoce el nuevo INIM
+        </p>
+
+        <a href="./Cursos.html" class="btn" data-key="botonCursos">
+            Ver Cursos
+        </a>
+
+    </section>
+
+
+    <script src="./Js/traductor.js"></script>
+
+
+    <footer>
+        <p>
+            &copy; INIM ONLINE 2025. Todos los derechos reservados.
+        </p>
+    </footer>
 
 </body>
+
 </html>
